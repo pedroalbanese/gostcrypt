@@ -1,4 +1,5 @@
 # GOSTCrypt ☭
+[![Build Status](https://www.travis-ci.org/pedroalbanese/gostcrypt.svg?branch=master)](https://www.travis-ci.org/pedroalbanese/gostcrypt)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](https://github.com/pedroalbanese/gostcrypt/blob/master/LICENSE.md) 
 [![GoDoc](https://godoc.org/github.com/pedroalbanese/gostcrypt?status.png)](http://godoc.org/github.com/pedroalbanese/gostcrypt)
 [![Go Report Card](https://goreportcard.com/badge/github.com/pedroalbanese/gostcrypt)](https://goreportcard.com/report/github.com/pedroalbanese/gostcrypt)
