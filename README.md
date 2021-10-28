@@ -3,7 +3,7 @@
 [![GoDoc](https://godoc.org/github.com/pedroalbanese/gostcrypt?status.png)](http://godoc.org/github.com/pedroalbanese/gostcrypt)
 [![Go Report Card](https://goreportcard.com/badge/github.com/pedroalbanese/gostcrypt)](https://goreportcard.com/report/github.com/pedroalbanese/gostcrypt)
 ### Grasshopper-MGM Encryption Tool
-####GOST R 34.10-2015 Kuznechik Block Cipher
+#### GOST R 34.10-2015 Kuznechik Block Cipher
 <pre>Usage of gostcrypt:
   -d    Decrypt instead Encrypt.
   -f string
