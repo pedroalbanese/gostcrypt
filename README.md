@@ -1,5 +1,5 @@
 # GOSTCrypt ☭
-[![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](https://github.com/pedroalbanese/gostcrypt/blob/master/LICENSE.md) 
+[![ISC License](http://img.shields.io/badge/license-ISC-grey.svg)](https://github.com/pedroalbanese/gostcrypt/blob/master/LICENSE.md) 
 [![GoDoc](https://godoc.org/github.com/pedroalbanese/gostcrypt?status.png)](http://godoc.org/github.com/pedroalbanese/gostcrypt)
 [![Go Report Card](https://goreportcard.com/badge/github.com/pedroalbanese/gostcrypt)](https://goreportcard.com/report/github.com/pedroalbanese/gostcrypt)
 ### Grasshopper-MGM Encryption Tool
