@@ -7,7 +7,7 @@
 <pre>Usage of gostcrypt:
   -d    Decrypt instead Encrypt.
   -f string
-        Target file.
+        Target file. (- for STDIN)
   -i int
         Iterations. (for PBKDF2) (default 1024)
   -k string
