@@ -20,7 +20,7 @@
 #### Example of encryption/decryption:
 ```sh
 ./gostcrypt -k $256bitkey -f plaintext.ext > ciphertext.ext
-./gostcrypt -k $256bitkey -f ciphertext.ext > plaintext.ext
+./gostcrypt -d -k $256bitkey -f ciphertext.ext > plaintext.ext
 ```
 ## License
 
