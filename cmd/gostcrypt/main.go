@@ -30,9 +30,10 @@ func main() {
 	flag.Parse()
 
 	if len(os.Args) < 2 {
-		fmt.Println("GRASSHOPPER Encryption Tool - ALBANESE Lab (c) 2020-2021")
-		fmt.Println("GOST R 34.12-2012 Kuznechik block cipher in MGM (Multilinear Galois Mode).\n")
-		fmt.Println("Usage of", os.Args[0]+":")
+		fmt.Fprintln(os.Stderr, "GRASSHOPPER Encryption Tool - ALBANESE Lab (c) 2020-2021")
+		fmt.Fprintln(os.Stderr, "GOST R 34.12-2012 Kuznechik block cipher in MGM (Multilinear Galois Mode)\n")
+		fmt.Fprintln(os.Stderr, "Usage of "+os.Args[0]+":")
+		fmt.Fprintln(os.Stderr, os.Args[0]+" [-d] -p \"pass\" [-i N] [-s \"salt\"] -f <file.ext>")
 		flag.PrintDefaults()
 		os.Exit(1)
 	}
