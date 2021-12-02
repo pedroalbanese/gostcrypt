@@ -7,9 +7,10 @@
 ### Grasshopper-MGM Encryption Tool
 #### GOST R 34.10-2015 Kuznechik Block Cipher
 <pre>Usage of gostcrypt:
+gostcrypt [-d] -p "pass" [-i N] [-s "salt"] -f &lt;file.ext&gt;
   -d    Decrypt instead Encrypt.
   -f string
-        Target file. (- for STDIN)
+        Target file.
   -i int
         Iterations. (for PBKDF2) (default 1024)
   -k string
@@ -19,6 +20,7 @@
   -r    Generate random 256-bit cryptographic key.
   -s string
         Salt. (for PBKDF2)</pre>
+        
 #### Example of encryption/decryption:
 ```sh
 ./gostcrypt -k $256bitkey -f plaintext.ext > ciphertext.ext
