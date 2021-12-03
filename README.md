@@ -5,7 +5,7 @@
 [![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/pedroalbanese/gostcrypt)](https://golang.org)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/pedroalbanese/gostcrypt)](https://github.com/pedroalbanese/gostcrypt/releases)
 ### Grasshopper-MGM Encryption Tool
-#### GOST R 34.10-2015 Kuznechik block cipher (RFC 7801) with Multilinear Galois Mode (MGM), June 2021 (RFC 9058).
+#### GOST R 34.12-2015 Kuznechik block cipher (RFC 7801) with Multilinear Galois Mode (MGM), June 2021 (RFC 9058).
 <pre>Usage of gostcrypt:
 gostcrypt [-d] -p "pass" [-i N] [-s "salt"] -f &lt;file.ext&gt;
   -d    Decrypt instead Encrypt.
