@@ -1,5 +1,6 @@
 # GOSTCrypt ☭
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](https://github.com/pedroalbanese/gostcrypt/blob/master/LICENSE.md) 
+[![GitHub downloads](https://img.shields.io/github/downloads/pedroalbanese/gostcrypt/total.svg?logo=github&logoColor=white)](https://github.com/pedroalbanese/gostcrypt/releases)
 [![GoDoc](https://godoc.org/github.com/pedroalbanese/gostcrypt?status.png)](http://godoc.org/github.com/pedroalbanese/gostcrypt)
 [![Go Report Card](https://goreportcard.com/badge/github.com/pedroalbanese/gostcrypt)](https://goreportcard.com/report/github.com/pedroalbanese/gostcrypt)
 [![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/pedroalbanese/gostcrypt)](https://golang.org)
