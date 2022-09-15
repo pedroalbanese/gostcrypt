@@ -31,4 +31,4 @@ gostcrypt [-d] -p "pass" [-i N] [-s "salt"] -f &lt;file.ext&gt;
 
 This project is licensed under the ISC License.
 
-##### Military Grade Reliability. Copyright (c) 2020-2021 ALBANESE Research Lab.
+##### Military-Grade Reliability. Copyright (c) 2020-2021 ALBANESE Research Lab.
