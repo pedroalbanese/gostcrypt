@@ -9,6 +9,8 @@
 #### GOST R 34.12-2015 Kuznechik block cipher (RFC 7801) with Multilinear Galois Mode (MGM), June 2021 (RFC 9058).
 <pre>Usage of gostcrypt:
 gostcrypt [-d] -p "pass" [-i N] [-s "salt"] -f &lt;file.ext&gt;
+  -a string
+        Additional data.
   -d    Decrypt instead Encrypt.
   -f string
         Target file.
