@@ -17,6 +17,7 @@ import (
 )
 
 var (
+	info   = flag.String("a", "", "Additional data.")
 	dec    = flag.Bool("d", false, "Decrypt instead Encrypt.")
 	file   = flag.String("f", "", "Target file.")
 	iter   = flag.Int("i", 1024, "Iterations. (for PBKDF2)")
@@ -30,8 +31,8 @@ func main() {
 	flag.Parse()
 
 	if len(os.Args) < 2 {
-		fmt.Fprintln(os.Stderr, "GRASSHOPPER Encryption Tool - ALBANESE Lab (c) 2020-2021")
-		fmt.Fprintln(os.Stderr, "GOST R 34.12-2012 Kuznechik block cipher in MGM (Multilinear Galois Mode)\n")
+		fmt.Fprintln(os.Stderr, "GRASSHOPPER Encryption Tool - ALBANESE Research Lab (c) 2020-2022")
+		fmt.Fprintln(os.Stderr, "GOST R 34.12-2012 Kuznechik with MGM (Multilinear Galois Mode)\n")
 		fmt.Fprintln(os.Stderr, "Usage of "+os.Args[0]+":")
 		fmt.Fprintln(os.Stderr, os.Args[0]+" [-d] -p \"pass\" [-i N] [-s \"salt\"] -f <file.ext>")
 		flag.PrintDefaults()
@@ -93,7 +94,13 @@ func main() {
 	if *dec == false {
 		nonce := make([]byte, aead.NonceSize(), aead.NonceSize()+len(msg)+aead.Overhead())
 
-		out := aead.Seal(nonce, nonce, msg, nil)
+		if _, err := io.ReadFull(rand.Reader, nonce); err != nil {
+			log.Fatal(err)
+		}
+
+		nonce[0] &= 0x7F
+
+		out := aead.Seal(nonce, nonce, msg, []byte(*info))
 		fmt.Printf("%s", out)
 
 		os.Exit(0)
@@ -102,7 +109,7 @@ func main() {
 	if *dec == true {
 		nonce, msg := msg[:aead.NonceSize()], msg[aead.NonceSize():]
 
-		out, err := aead.Open(nil, nonce, msg, nil)
+		out, err := aead.Open(nil, nonce, msg, []byte(*info))
 		if err != nil {
 			log.Fatal(err)
 		}
