@@ -11,7 +11,7 @@
 gostcrypt [-d] -p "pass" [-i N] [-s "salt"] -f &lt;file.ext&gt;
   -a string
         Additional data.
-  -d    Decrypt instead Encrypt.
+  -d    Decrypt instead of Encrypt.
   -f string
         Target file.
   -i int
